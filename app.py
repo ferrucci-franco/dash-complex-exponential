@@ -122,6 +122,7 @@ app.layout = html.Div([
     # Title with inline LaTeX
     dcc.Markdown(
         children=r"**3D representation of complex evolution** $z(t) = A e^{j(\omega t + \varPhi)} = A e^{j\varphi} \cdot e^{j\omega t} = A \cos(\omega t + \varPhi) + j A \sin(\omega t + \varPhi)$",
+        children=r"**3D representation of complex evolution** $z(t) = A e^{j(\omega t + \varPhi)} = \underbrace{A e^{j\varphi}}_{\text{phasor}} \cdot e^{j\omega t} = A \cos(\omega t + \varPhi) + j A \sin(\omega t + \varPhi)$",
         mathjax=True,
         style={"fontSize": "20px", "textAlign": "center", "marginBottom": "10px"}
     ),
