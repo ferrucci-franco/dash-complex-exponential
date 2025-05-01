@@ -94,7 +94,7 @@ def generate_figure(A, f, phi_deg, t_span):
     )
 
     fig.update_layout(
-        height=800,
+        height=590,
         autosize=True,
         margin=dict(l=10, r=10, t=10, b=10),
         annotations=[
@@ -189,4 +189,5 @@ def update_plot(A, f, phi_deg, t):
 
 # === Start server ===
 if __name__ == "__main__":
-    app.run_server(debug=False, port=8050)
+    app.run(debug=False, port=8050)
+    
