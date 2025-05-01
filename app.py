@@ -94,7 +94,7 @@ def generate_figure(A, f, phi_deg, t_span):
     )
 
     fig.update_layout(
-        height=575,
+        height=565,
         autosize=True,
         margin=dict(l=10, r=10, t=10, b=10),
         annotations=[
