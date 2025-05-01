@@ -129,7 +129,7 @@ app.layout = html.Div([
     # Control bar (centered inline)
     html.Div([
         html.Div([
-            dcc.Markdown("**Phase** $\\varphi$ (°)", style={"marginRight": "5px", "fontSize": "16px", "whiteSpace": "nowrap"}),
+            dcc.Markdown("Phase \u03C6 (°)", style={"marginRight": "5px", "fontSize": "16px", "whiteSpace": "nowrap"}),
             dcc.Input(id="phi", type="number", value=-30, step=1, style=control_style)
         ], style={"display": "flex", "alignItems": "center", "marginRight": "20px"}),
 
