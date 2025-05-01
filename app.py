@@ -52,7 +52,7 @@ def generate_figure(A, f, phi_deg, t_span):
         mode='lines+markers',
         line=dict(color='black', width=5),
         marker=dict(size=3),
-        name="Phasor"
+        name="Phasor A·exp(jφ)"
     ), row=1, col=1)
 
     fig.add_trace(go.Scatter3d(
@@ -121,7 +121,7 @@ def generate_figure(A, f, phi_deg, t_span):
 app.layout = html.Div([
     # Title with inline LaTeX
     dcc.Markdown(
-        children=r"**3D representation of complex evolution** $z(t) = A e^{j(\omega t + \varphi)} = A \cos(\omega t + \varphi) + j A \sin(\omega t + \varphi)$",
+        children=r"**3D representation of complex evolution** $z(t) = A e^{j(\omega t + \varPhi)} = A e^{j\varphi} \cdot e^{j\omega t} = A \cos(\omega t + \varPhi) + j A \sin(\omega t + \varPhi)$",
         mathjax=True,
         style={"fontSize": "20px", "textAlign": "center", "marginBottom": "10px"}
     ),
